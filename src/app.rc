@@ -1,0 +1,40 @@
+#include <winver.h>
+
+#define IDI_APP_ICON 101
+#define APP_VER_MAJOR 1
+#define APP_VER_MINOR 0
+#define APP_VER_PATCH 0
+#define APP_VER_BUILD 0
+
+IDI_APP_ICON ICON "..\\iconbig.ico"
+1 RT_MANIFEST "app.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION APP_VER_MAJOR,APP_VER_MINOR,APP_VER_PATCH,APP_VER_BUILD
+ PRODUCTVERSION APP_VER_MAJOR,APP_VER_MINOR,APP_VER_PATCH,APP_VER_BUILD
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "Comments", "License: PolyForm Noncommercial 1.0.0 (https://polyformproject.org/licenses/noncommercial/1.0.0) | Required Notice: Copyright 2026 OzzyIsNeko (https://github.com/OzzyIsNeko)"
+            VALUE "CompanyName", "OzzyIsNeko"
+            VALUE "FileDescription", "Flow Autoclicker"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "FlowAutoclicker"
+            VALUE "LegalCopyright", "Copyright (c) 2026 OzzyIsNeko"
+            VALUE "OriginalFilename", "FlowAutoclicker.exe"
+            VALUE "ProductName", "Flow Autoclicker"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
