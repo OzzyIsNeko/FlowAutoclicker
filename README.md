@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/26836322/README.md)
 # Flow Autoclicker
 
 Native Windows autoclicker written in C++.
